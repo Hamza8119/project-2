@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            overflow-x: hidden;
+        }
+        .homme{
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 400px;
+            margin-right: 200px;
+            
+        }
+        a{
+            color: coral;
+            padding: 10px;
+         
+           text-decoration: none;
+
+        }
+        .button1{
+            background-color:coral;
+            color: aliceblue;
+            padding: 5px;
+           margin-bottom: 2px;
+           transition: all 1s ease-in-out;
+           border: solid 1px aliceblue;
+           border-radius: 4px;
+        }
+        .button1:hover{
+           background-color: rgb(241, 244, 247);
+           color: black;
+           border: solid 1px blue;
+           transform: matrix(0.1s);
+        }
+      
+      
+        .image1{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+           
+        }
+        .image{
+            background-image: url(Charity-banner-bg\ \(1\).jpg);
+            width: 100%;
+            height: 100vh;
+            
+            position: relative;
+            background-size: cover;
+            
+        }
+        .filtr{
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            background-color: rgb(180, 24, 24);
+            opacity: 0.1;
+        }
+    h1{
+        color: rgba(255, 255, 255, 0.429);
+       
+    }
+    .esp{
+       padding: 60px;
+       position: relative;
+
+       
+    }
+    h5,h2{
+        color: black;
+    }
+    .bu1{
+     padding: 7px;
+     background-color: coral;
+     border-radius: 28px;
+     color: aliceblue;
+     border: solid 1px coral;
+     transition: all 1s ease;
+     margin-right: 10px;
+    }
+    .bu2{
+     padding: 7px;
+     background-color: rgb(255, 254, 253);
+     border-radius: 28px;
+     color: coral;
+     border: solid 1px cornsilk;
+     transition: all 1s ease;
+    margin-right: 10px;
+     
+    }
+.bu1:hover{
+    color:coral;
+    background-color: rgb(249, 251, 252);
+    border: solid 1px cornsilk;
+   transform: skewY(0.1s);
+}
+.bu2:hover{
+    background-color:coral;
+    color: rgb(249, 251, 252);
+    border: solid 1px coral;
+    transform: skewY(0.1s);
+}
+h2{
+    font-size:60px;
+    
+}
+h5{
+    color: rgba(240, 248, 255, 0.769);
+}
+.add{
+    text-align: center;
+    
+}
+.diqq{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 30px;
+}
+.diqq2{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 30px;
+    text-align: center;
+}
+.h3-2{
+    color: rgb(27, 27, 121);
+}
+h4{
+    color: rgb(27, 27, 121);
+}
+h6{
+    color: coral;
+}
+.h3-2:hover{
+    color: coral;
+}
+.p-13{
+    color: rgba(0, 0, 0, 0.402);
+    font-size: 10px;
+}
+.P-3{
+    color: rgba(0, 0, 0, 0.402);
+    font-size: 10px;
+}
+.azer1{
+    width: 200px;
+}
+.azer2{
+    width: 200px;
+}
+.azer3{
+    width: 200px;
+}
+.h6-1{
+   color: coral;
+}
+.h3-1{
+color: rgb(27, 27, 121) ;
+}
+.p-1{
+    color: rgba(0, 0, 0, 0.505);
+}
+.sqaz{
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    display: flex;
+
+}
+.areez{
+   width: 160px;
+   margin-right: 400px;
+   
+    
+
+}
+.img1{
+    margin-left:170px;
+}
+i{
+    font-size: 30px;
+    
+    
+    color: coral;
+   
+  
+}
+
+i:hover{
+ 
+color: rgb(27, 27, 121);
+
+
+}
+.p-2{
+ font-size: 10px;
+ color: rgb(27, 27, 121) ;
+}
+.are4{
+    display: flex;
+    
+}
+.stok{
+    background-image: url(charity-stroke-text-2.png);
+ 
+  margin-right: 300px;
+  margin-left: 300px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  
+
+    
+}
+.h3-3{
+    color: coral;
+    text-align: center;
+}
+.h4-3{
+    color: rgb(27, 27, 121);
+    text-align: center;
+}
+.design{
+    background-color: rgba(225, 221, 221, 0.112);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 322px;
+   
+    
+}
+.h1-3{
+     color:rgb(19, 19, 67);
+     font-size: 27px;
+   
+ 
+
+}
+.right-menu{
+    margin-left: 200px;
+    margin-top: 20px;
+    
+}
+.image-active{
+   margin-right: 350px;
+   
+   
+}
+.accordion-4{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+
+}
+.p-4{
+    color: rgba(0, 0, 0, 0.708);
+    font-size: 10px;
+   
+}
+.button4{
+    background-color:coral;
+            color: aliceblue;
+              margin: 14px;
+              padding: 5px;
+           transition: all 1s ease-in-out;
+           border: solid 1px aliceblue;
+           margin-right: 20px;
+           
+           
+}
+.by1{
+    display: flex;
+    
+
+}
+.h6-3:hover{
+    color: rgb(40, 122, 40);
+    transform: matrix(0.1s);
+}
+.h6-3{
+    color:rgb(19, 19, 67);
+    transition: all 1s ease-in-out;
+    
+
+}
+
+.trackback{
+    background-image: url(charity-stroke-text-3.png);
+    background-size: cover;
+   
+    margin-right: 300px;
+  margin-left: 300px;
+ 
+ text-align: center;
+  font-size: 13px;
+}
+.premium_doc{
+    margin-top: 100px;
+}
+.pictures{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 410px;
+  margin-left: 410px;
+}
+.pic1{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.pic2{
+ 
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+
+}
+.pic3{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.pic4{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.fin-1{
+    
+    text-align: center;
+}
+.h4-5{
+    color: rgba(0, 0, 0, 0.852);
+
+}
+.p-5{
+    color: rgba(0, 0, 0, 0.671);
+    font-size: 10px;
+  
+   
+}
+.fin-2{
+    text-align: center;
+    margin: 30px;
+    
+    height: 170px;
+    display: flex;
+   justify-content: center;
+   flex-direction: column;
+   margin: 50px;
+   background-image: url(call_to_action21.jpg);
+}
+.p-6{
+    color: rgb(251, 252, 254);
+    font-size: 8px;
+}
+.h3-5{
+    color: rgb(251, 252, 254);
+    font-size: 15px;
+}
+
+.button8{
+  width: 98px;
+  border-radius: 40px;
+  padding: 5px;
+  font-size: 10px;
+  
+  
+  margin-left: 533px;
+  transition: all 1s solid ease-in-out;
+  border:  1px solid  rgb(251, 253, 255);
+  background: transparent;
+  
+  color: rgb(251, 253, 255);
+  
+}
+.button8:hover{
+     transform: matrix(0.1s);
+     color: rgb(238, 255, 5);
+     background-color: rgb(253, 253, 253);
+     border: 1px solid rgb(253, 253, 253);
+}
+.project{
+    overflow-x: hidden;
+}
+.icon3{
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #fff;
+            text-align: left;
+            box-sizing: border-box;
+            display: none;
+        }
+@media screen and (max-width :768px){
+.homme{
+    display: none;
+}
+.icon3{
+ display: block;
+display: flex;
+width: 250px;
+margin-left: 50px;
+}
+.icon3:hover{
+   width: 250px;
+   height: 250px;
+}
+
+a{
+    font-size: 10px;
+    display: flex;
+    gap: 10;
+    margin: 0;
+    padding: 9px;
+   
+   
+} 
+.image{
+    width: 100%;
+    
+}
+h2{
+    font-size: 55px;
+}
+.diqq,.diqq2{
+    margin: 0;
+}
+.areez{
+   margin-left: 110px;
+   text-align: center;
+   font-size: 40px;
+   
+    
+
+}
+.img1{
+    margin: 0;
+}
+.stok{
+    margin: 0;
+}
+.right-menu{
+    margin: 0;
+}
+.trackback{
+    margin: 0;
+}
+.premium_doc{
+    margin-top: 110px;
+   
+}
+.image-active{
+    margin-left: 35px;
+}
+.pictures{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    margin-top: 20px;
+}
+.pic1{
+    margin-bottom: 10px;
+}
+.pic3{
+    margin: 10px;
+}
+.fin-2{
+   
+    margin: 0;
+    
+}
+.p-2{
+ font-size: 25px;
+ color: rgb(27, 27, 121) ;
+}
+i{
+    font-size: 90px;
+    
+    
+    color: coral;
+   
+  
+}
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="project">
+        <div class="icon3">
+            <i class=" fas fa-bars">
+               <a href="">Home</a><a href="">About Us</a><a href="">Docs</a><a href="">Formation</a><a href=""><button class="button1">Dar-Digatl</button></a>
+            </i>
+           </div>
+     <div class="homme">
+        <a href="">Home</a><a href="">About Us</a><a href="">Docs</a><a href="">Formation</a><a href=""><button class="button1">Dar-Digatl</button></a>
+     </div>
+     <div class="image">
+        <div class="filtr">
+
+        </div>
+        <div class="esp">
+       
+            <h1>CHARITY</h1>
+            <h5>Helping children</h5>
+            <h2>FIGHT FOR RIGHT <br>CAUSSAIS</br></h2>
+            <button class="bu1">learn More</button>
+            <button class="bu2">Contact Us</button>
+
+        </div>
+
+     </div>
+     <div class="add">
+      <div class="add1">
+       <h6>WHAT WE DO</h6>
+       <h4>We aim to provide groceries, amenities and appliances <br></br> to low-income familes. We nedd your help</h4>
+      </div>
+   <div class="diqq">
+    <div class="image2">
+        <img src="Charity-blog-2-300x201.png" alt="" class="azer1">
+        <h3 class="h3-2">Help The Helpless</h3>
+        <p class="P-3">Findings and studies in cancer Science Blog. Sharing new developments.</p>
+      </div>
+      <div class="image3">
+        <img src="Charity-blog-3-300x201.png" alt=""  class="azer2">
+        <h3 class="h3-2">Save The Children</h3>
+        <p class="P-3">developmentses findings science Blog. Sharing new and studies in cancer.</p>
+      </div>
+      <div class="image4">
+        <img src="Charity-blog-300x201.png" alt=""  class="azer3">
+        <h3 class="h3-2">Donation For Poor
+        </h3>
+        <p class="P-3">Findings and studies in cancer Science Blog. Sharing new developments.</p>
+      </div>
+   </div>
+     </div>
+     <div class="sqaz">
+      <div class="img1">
+        <img src="charity-about-image-1.png" alt="azer4" >
+      </div>
+      <div class="areez">
+      <h6 class="h6-1">
+        ABOUT US</h6>
+      <h3 class="h3-1">Known across life stories
+        Country and the world amazing</h3>
+      <P class="p-1">Behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live artes we do in the world of finance.</P>
+      <div class="are4">
+ <i class="fa-brands fa-youtube"></i>
+        <p class="p-2">Play Now</p>
+      </div>
+      </div>
+
+     </div>
+     <div class="stok">
+       <div class="qze">
+        <h3 class="h3-3">TIME HAS CHANGED</h3>
+        <h4 class="h4-3">Latest Campaigns</h4>
+       </div>
+     </div>
+
+     <div class="diqq2">
+        <div class="image2">
+            <img src="Charity-blog-2-300x201.png" alt="" class="azer1">
+            <h3 class="h3-2">Help The Helpless</h3>
+            <p class="p-13">Findings and studies in cancer Science Blog. Sharing new developments.</p>
+          </div>
+          <div class="image3">
+            <img src="Charity-blog-3-300x201.png" alt=""  class="azer2">
+            <h3 class="h3-2">Save The Children</h3>
+            <p class="p-13">developmentses findings science Blog. Sharing new and studies in cancer.</p>
+          </div>
+          <div class="image4">
+            <img src="Charity-blog-300x201.png" alt=""  class="azer3">
+            <h3 class="h3-2">Donation For Poor
+            </h3>
+            <p class="p-13">Findings and studies in cancer Science Blog. Sharing new developments.</p>
+          </div>
+       </div>
+       <br>
+   <div class="design">
+    <div class="right-menu">
+        <h1 class="h1-3">Ready to join the growing <br> elementskit Community?</h1>
+        <p class="p-4">Create a High Performed UI/UX Design from a Silicon Valley.</p>
+       <div class="by1">
+        <button class="button4">Buy it Now</button>
+        <h6 class="h6-3">get Started</h6>
+       </div>
+      </div>
+      <div class="image-active">
+         <img src="image-2-1-600x497.png" alt="" class="accordion-4">
+      </div>
+   </div>
+   <br>
+   <div class="premium_doc">
+    <div class="trackback">
+       <h4 class="h4-4">OUR AWESOME</h4>
+       <h3 class="h3-4">Creative Team</h3>
+    </div>
+   </div>
+   <div class="pictures">
+       <img src="team_img-1-1-248x300.jpeg" alt="" class="pic1">
+       <img src="team_img-4-1-248x300.jpeg" alt="" class="pic2">
+       <img src="team_img-3-1-248x300.jpeg" alt="" class="pic3">
+       <img src="team_img-2-1-1-248x300.jpeg" class="pic4">
+   </div>
+   <br><br><br>
+   <div class="fin">
+  <div class="fin-1">
+   <h4 class="h4-5">Call to Action</h4>
+   <p class="p-5">Enrich your WordPress site more interactive by adding a gorgeous looking call to action widget.</p>
+  </div>
+  <div class="fin-2">
+    
+
+    <h3 class="h3-5">Beautiful Landing Page with Elements</h3>
+    <p class="p-6">A small river named Duden flows by their place and supplies it with the necessary regelialia.
+        It is a paradisematic country, in which</p>
+    <button class="button8">PURCHASE NOW</button>
+</div>
+    
+  </div>
+   </div>
+      
+    </body>
+</html>
